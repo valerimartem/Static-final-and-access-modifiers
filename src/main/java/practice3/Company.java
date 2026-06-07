@@ -14,7 +14,7 @@ public class Company {
     static String companyName = "Google";
 
     final int employeeID;
-    String employeeName;
+    public String employeeName;
 
     Company(int employeeID, String employeeName) {
         this.employeeID = employeeID;
@@ -27,7 +27,7 @@ public class Company {
     String getEmployeeName() {
         return this.employeeName;
     }
-    void setEmployeeName(String employeeName) {
+    public void setEmployeeName(String employeeName) {
         this.employeeName = employeeName;
     }
 
