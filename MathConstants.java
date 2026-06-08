@@ -9,7 +9,7 @@ public class MathConstants {
     // В main: вызовите методы с разными значениями радиуса.
     //calculateExponentialGrowth(double initialValue, double rate, double time) — расчет по формуле экспоненциального роста:
     static final double PI = 3.14159;
-    final double E = 2.71828;
+    static final double E = 2.71828;
 
     static double calculateCircleArea(double radius) {
         return PI * radius *radius;
@@ -17,7 +17,7 @@ public class MathConstants {
     static double calculateCircumference(double radius) {
         return 2 * PI * radius;
     }
-    double calculateExponentialGrowth(double initialValue, double rate, double time) {
+    static double calculateExponentialGrowth(double initialValue, double rate, double time) {
         return (initialValue * Math.pow(E, (rate * time)));
     }
 }
