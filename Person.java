@@ -19,22 +19,22 @@ public class Person {
         this.lastName = lastName;
         this.ssn = ssn;
     }
-    String getFirstName() {
+    public String getFirstName() {
         return this.firstName;
     }
-    String getLastName() {
+    public String getLastName() {
         return this.lastName;
     }
-    String getSsn() {
+    public String getSsn() {
         return this.ssn;
     }
-    void setFirstName(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    void setLastName(String lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    void printPersonInfo() {
+    public void printPersonInfo() {
         System.out.println("Имя: " + this.firstName + " Фамилия: " + this.lastName + " SSN: " + this.ssn);
     }
 
