@@ -10,9 +10,9 @@ public class Company {
     // В main: создайте несколько сотрудников, измените companyName и проверьте, что она изменилась для всех.
     // Попробуйте изменить employeeID — должно быть невозможно.
 
-    static String companyName;
-    final int employeeID;
-    String employeeName;
+    static String companyName = "Google";
+    private final int employeeID;
+    private String employeeName;
 
     Company(int employeeID, String employeeName) {
         this.employeeID = employeeID;
@@ -22,10 +22,10 @@ public class Company {
     static void printCompanyName() {
         System.out.println("Имя компании: " + Company.companyName);
     }
-    String getEmployeeName() {
+    public String getEmployeeName() {
         return this.employeeName;
     }
-    void setEmployeeName(String employeeName) {
+    public void setEmployeeName(String employeeName) {
         this.employeeName = employeeName;
     }
 
