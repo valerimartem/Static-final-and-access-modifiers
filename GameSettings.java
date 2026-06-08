@@ -11,20 +11,20 @@ public class GameSettings {
     // В main: создайте 2 игры, измените maxPlayers, добавьте игроков и выведите статус.
 
     static int maxPlayers;
-    final String gameName;
-    int currentPlayers;
+    private final String gameName;
+    private int currentPlayers;
 
     GameSettings(String gameName, int currentPlayers) {
         this.gameName = gameName;
         this.currentPlayers = currentPlayers;
     }
-    static void setMaxPlayers(int someMaxPlayers) {
+    public static void setMaxPlayers(int someMaxPlayers) {
         maxPlayers = someMaxPlayers;
     }
-    void addPlayer() {
+    public void addPlayer() {
         this.currentPlayers++;
     }
-    void printGameStatus() {
+    public void printGameStatus() {
         System.out.println("Название игры: " + this.gameName + " Текущее количество игроков: " + this.currentPlayers + " Максимум игроков: " + GameSettings.maxPlayers);
     }
 }
