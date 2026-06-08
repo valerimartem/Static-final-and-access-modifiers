@@ -10,7 +10,7 @@ public class University {
     // метод printStudentInfo() — выводит имя, ID и университет.
     // В main: создайте 3 студента, измените название университета и выведите данные.
 
-    static String universityName;
+    static String universityName = "МГУ";
     final int studentID;
     String studentName;
 
